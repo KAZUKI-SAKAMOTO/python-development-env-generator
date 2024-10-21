@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  rust:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ../:/workspace
+    ports:
+      - 8080:8080
+      - 3000:3000
+    environment:
+      - USER=root
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    user: "1000:1000"

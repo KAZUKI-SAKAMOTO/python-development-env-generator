@@ -1,0 +1,30 @@
+{
+    "name": "Rust Development Environment",
+    "dockerComposeFile": [
+        "../.devcontainer/docker-compose.yml"
+    ],
+    "service": "rust",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                // Rust
+                "rust-lang.rust-analyzer",
+                "ms-vscode.cpptools",
+                "vadimcn.vscode-lldb",
+                
+                // Git
+                "mhutchie.git-graph",
+                "eamodio.gitlens",
+                "github.vscode-pull-request-github",
+                "donjayamanne.githistory",
+                "vivaxy.vscode-conventional-commits",
+
+                // Other
+                "ms-azuretools.vscode-docker",
+                "streetsidesoftware.code-spell-checker-cspell-bundled-dictionaries"
+            ]
+        }
+    },
+    "remoteUser": "root"
+} 
