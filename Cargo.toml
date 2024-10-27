@@ -2,3 +2,7 @@
 name = "python-env-generator"
 version = "0.1.0"
 edition = "2021"
+
+[dependencies]
+dialoguer = "0.11.0"
+tera = "1.20.0"
