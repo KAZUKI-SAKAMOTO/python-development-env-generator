@@ -1,0 +1,28 @@
+{
+    "files.insertFinalNewline": true,
+    "[python]": {
+      "editor.tabSize": 4,
+      "editor.insertSpaces": true,
+      "editor.formatOnSave": true,
+      "editor.formatOnSaveMode": "file",
+      "editor.rulers": [
+        160
+      ],
+      "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    "autoDocstring.docstringFormat": "google",
+    "python.analysis.typeCheckingMode": "basic",
+    "[json]": {
+      "editor.tabSize": 2,
+      "editor.insertSpaces": false,
+      "editor.formatOnSave": true,
+      "editor.formatOnSaveMode": "file"
+    },
+    "[jsonc]": {
+      "editor.tabSize": 2,
+      "editor.insertSpaces": false,
+      "editor.formatOnSave": true,
+      "editor.formatOnSaveMode": "file"
+    }
+  }
+  

@@ -1,0 +1,23 @@
+[mypy]
+# 型チェックを厳格にするためのオプション
+strict = True
+
+# 型の宣言がないコードをエラーとする
+disallow_untyped_defs = True
+
+# 型の返り値が宣言されていない関数をエラーとする
+disallow_incomplete_defs = True
+
+# 型のない呼び出しや変数への割り当てを許可しない
+disallow_untyped_calls = True
+disallow_untyped_decorators = True
+
+
+# 型情報が完全でない箇所を警告する
+warn_unreachable = True
+
+# Pythonのバージョンを指定
+python_version = 3.12
+
+# 特定のフォルダやファイルを除外する場合
+exclude = tests/.*

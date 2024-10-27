@@ -1,0 +1,38 @@
+{
+    "name": "Core Development Container for Japanese",
+    "dockerComposeFile": [
+        "./docker-compose.yml"
+    ],
+    "service": "core-dev",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                // Git
+                "mhutchie.git-graph",
+                "eamodio.gitlens",
+                "donjayamanne.githistory",
+
+                // python
+                "ms-python.python",
+                "ms-python.mypy-type-checker",
+                "ms-python.debugpy",
+                "njpwerner.autodocstring",
+                "ms-python.flake8",
+
+
+                // Github
+                "github.copilot",
+                "github.vscode-pull-request-github",
+
+                // Other
+                "ms-azuretools.vscode-docker",
+                "vivaxy.vscode-conventional-commits",
+                "streetsidesoftware.code-spell-checker"
+
+
+            ]
+        }
+    },
+    "remoteUser": "root"
+} 

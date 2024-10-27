@@ -1,0 +1,15 @@
+{
+    // cspell configuration file
+    "version": "0.2",
+    "language": "en",
+    "words": [
+        // Add words here to be ignored by the spell checker
+    ],
+    "ignorePaths": [
+        // Add paths to files or directories to be ignored by the spell checker
+        "dist/**"
+    ],
+    "dictionaries": [
+        // Add additional dictionaries here
+    ]
+}

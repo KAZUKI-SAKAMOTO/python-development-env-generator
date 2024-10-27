@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  core-dev:
+    build:
+      context: .
+      dockerfile: ../Docker/Dockerfile
+    volumes:
+      - ../:/workspace
+    environment:
+      - USER=root
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    user: "1000:1000"
+    networks:
+      - dev-networks
+
+networks:
+  dev-networks:
+    driver: bridge

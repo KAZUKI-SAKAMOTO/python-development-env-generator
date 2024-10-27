@@ -1,0 +1,6 @@
+def main(s: str) -> None:
+    print("Hello from workspace!")
+
+
+if __name__ == "__main__":
+    main("abc")
