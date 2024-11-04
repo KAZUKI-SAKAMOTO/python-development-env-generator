@@ -17,7 +17,7 @@ disallow_untyped_decorators = True
 warn_unreachable = True
 
 # Pythonのバージョンを指定
-python_version = 3.12
+python_version = {{ python_version }}
 
 # 特定のフォルダやファイルを除外する場合
 exclude = tests/.*

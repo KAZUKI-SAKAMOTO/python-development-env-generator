@@ -1,6 +1,0 @@
-# Use Ubuntu as the base image
-FROM json777/core-dev-container-jp:latest
-
-# Install uv
-RUN brew install uv
-
