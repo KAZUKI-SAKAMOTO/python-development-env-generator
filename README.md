@@ -1,23 +1,22 @@
-# Python Develop Environment Generator
+# Python Development Environment Generator
 
 ## Overview
 
-This project provides a generator for setting up a Python development environment. It automates the creation of virtual environments, installation of dependencies, and configuration of development tools.
+This project provides a generator for setting up a Python development environment. The generated project comes preconfigured with a linter ([flake8](https://pypi.org/project/flake8/)), a formatter ([pep8](https://peps.python.org/pep-0008/)), and a static type checker ([mypy](https://mypy-lang.org/)).
 
 ## Features
 
-- Automatic creation of virtual environments
-- Dependency management with `requirements.txt`
-- Configuration of development tools like linters and formatters
-- Easy setup with a single command
+- Package management using [uv](https://docs.astral.sh/uv/).
+- Ability to choose between Docker and local environments for development.
+- Automatic installation of uv if a local environment is selected.
 
 ## Installation
 
-TODO: Add installation instructions
+TODO: Preparing to install
 
 ## Usage
 
-After installation, you can use the generator to create a new Python development environment by running:
+After installation, you can create a new Python development environment in the command execution directory by running:
 ```sh
 $ peg
 Python Project Name?: Sample
