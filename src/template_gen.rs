@@ -1,4 +1,5 @@
 use std::{
+  collections::HashMap,
   fs::{self, File},
   io::{self, Write},
   path::PathBuf,
@@ -7,8 +8,12 @@ use tera::{Context, Tera};
 
 use crate::{types::tera_options::DevEnv, TeraOptions};
 
-pub fn create_project_files(option: &TeraOptions) -> std::io::Result<()> {
-  let tera = Tera::new("templates/**/*.tera").expect("Failed to parse templates");
+pub fn create_project_files(templates: &HashMap<&str, &str>, option: &TeraOptions) -> std::io::Result<()> {
+  let mut tera = Tera::default();
+  for (name, content) in templates.iter() {
+    print!("Add template: {}", name);
+    tera.add_raw_template(name, content).expect("Failed to add template");
+  }
 
   create_standard_files(&tera, &option).expect("Failed to create standard files");
 

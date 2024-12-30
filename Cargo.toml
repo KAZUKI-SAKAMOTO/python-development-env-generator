@@ -2,6 +2,7 @@
 name = "python-env-generator"
 version = "0.1.0"
 edition = "2021"
+build = "build.rs"
 
 [dependencies]
 convert_case = "0.6.0"

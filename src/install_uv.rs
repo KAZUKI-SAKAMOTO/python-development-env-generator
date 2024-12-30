@@ -1,3 +1,4 @@
+#[cfg(target_os = "linux")]
 use std::process::{Command, Stdio};
 
 #[cfg(target_os = "windows")]
@@ -7,10 +8,10 @@ pub fn is_installed_uv() -> bool {
 }
 
 #[cfg(target_os = "windows")]
-fn install_uv() -> Result<(), String> {
+pub fn install_uv() -> Result<(), Box<dyn std::error::Error>> {
   // Windows specific code
 
-  return Ok();
+  return Ok(());
 }
 
 #[cfg(target_os = "linux")]

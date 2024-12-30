@@ -9,6 +9,8 @@ use types::tera_options::DevEnv;
 
 use crate::types::tera_options::TeraOptions;
 
+include!(concat!(env!("OUT_DIR"), "/templates.rs"));
+
 fn main() {
   let options = options_select::options_select().unwrap();
 
@@ -26,5 +28,6 @@ fn main() {
     }
   }
 
-  template_gen::create_project_files(&options).expect("Failed to create project files");
+  let templates = load_templates();
+  template_gen::create_project_files(&templates, &options).expect("Failed to create project files");
 }
