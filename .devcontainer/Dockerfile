@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y \
     zsh \
     cmake \
     build-essential \
+    musl-tools\
     mingw-w64 \
     && rm -rf /var/lib/apt/lists/*
 
@@ -21,6 +22,8 @@ RUN rustup component add rustfmt clippy && \
     cargo install cargo-edit && \
     cargo install starship
 
+# Add the musl target
+RUN rustup target add x86_64-unknown-linux-musl
 
 # Set zsh as the default shell for root
 RUN chsh -s /bin/zsh root
