@@ -3,7 +3,7 @@
 set -e
 
 # GitHubリポジトリ情報
-REPO="KAZUKI-SAKAMOTO/python-develop-generator"
+REPO="KAZUKI-SAKAMOTO/python-development-env-generator"
 BINARY_NAME="peg"
 INSTALL_PATH="/usr/local/bin/$BINARY_NAME"
 

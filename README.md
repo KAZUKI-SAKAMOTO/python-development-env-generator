@@ -12,7 +12,11 @@ This project provides a generator for setting up a Python development environmen
 
 ## Installation
 
-TODO: Preparing to install
+Run the following command to install:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/KAZUKI-SAKAMOTO/python-development-env-generator/master/install.sh | /bin/bash
+```
 
 ## Usage
 
