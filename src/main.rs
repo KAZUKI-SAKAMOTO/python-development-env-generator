@@ -20,6 +20,7 @@ fn main() {
       let confirm = Confirm::new()
         .with_prompt("uv is not installed. This Python environment assumes uv: https://docs.astral.sh/uv/. Do you want to install it?")
         .interact()
+        .expect("Failed to get user input");
 
       if confirm {
         install_uv::install_uv().expect("Failed to install uv");
