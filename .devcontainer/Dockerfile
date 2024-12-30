@@ -40,4 +40,4 @@ RUN /usr/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/in
 RUN echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /root/.zshrc
 
 # Install pre-commit
-RUN brew install pre-commit
+RUN eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" && brew install pre-commit
