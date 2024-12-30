@@ -476,6 +476,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "peg"
+version = "1.0.0"
+dependencies = [
+ "convert_case",
+ "dialoguer",
+ "lazy_static",
+ "regex",
+ "serde",
+ "tera",
+ "validator",
+ "validator_derive",
+]
+
+[[package]]
 name = "percent-encoding"
 version = "2.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -604,20 +618,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f139b0662de085916d1fb67d2b4169d1addddda1919e696f3252b740b629986e"
 dependencies = [
  "unicode-ident",
-]
-
-[[package]]
-name = "python-env-generator"
-version = "0.1.0"
-dependencies = [
- "convert_case",
- "dialoguer",
- "lazy_static",
- "regex",
- "serde",
- "tera",
- "validator",
- "validator_derive",
 ]
 
 [[package]]
