@@ -19,7 +19,7 @@
                 "ms-python.debugpy",
                 "njpwerner.autodocstring",
                 "ms-python.flake8",
-
+                "ms-python.autopep8",
 
                 // Github
                 "github.copilot",
