@@ -38,3 +38,6 @@ RUN echo 'eval "$(starship init zsh)"' >> /root/.zshrc
 # Install Homebrew
 RUN /usr/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 RUN echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /root/.zshrc
+
+# Install pre-commit
+RUN brew install pre-commit
