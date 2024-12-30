@@ -11,7 +11,6 @@ use crate::{types::tera_options::DevEnv, TeraOptions};
 pub fn create_project_files(templates: &HashMap<&str, &str>, option: &TeraOptions) -> std::io::Result<()> {
   let mut tera = Tera::default();
   for (name, content) in templates.iter() {
-    print!("Add template: {}", name);
     tera.add_raw_template(name, content).expect("Failed to add template");
   }
 
