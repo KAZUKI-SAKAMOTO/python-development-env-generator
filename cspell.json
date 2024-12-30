@@ -4,7 +4,9 @@
         "dialoguer",
         "mypy",
         "preconfigured",
+        "prereleased",
         "pyproject",
+        "rustup",
         "Tera"
     ]
 }
