@@ -12,7 +12,11 @@
 
 ## Installation
 
-TODO: インストール準備中
+次のコマンドを実行してください：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/KAZUKI-SAKAMOTO/python-development-env-generator/master/install.sh | /bin/bash
+```
 
 ## Usage
 
