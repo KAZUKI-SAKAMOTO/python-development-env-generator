@@ -1,0 +1,35 @@
+name: Release
+
+on:
+  release:
+    types: 
+      - published
+      - prereleased
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+
+      - name: Add targets
+        run: |
+          rustup target add x86_64-unknown-linux-gnu
+
+      - name: Build binaries
+        run: |
+          cargo build --target x86_64-unknown-linux-gnu --release
+
+      - name: Upload release assets
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: target/x86_64-unknown-linux-gnu/release/peg
+          asset_name: linux-binary
+          asset_content_type: application/octet-stream
