@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y \
     zsh \
     cmake \
     build-essential \
+    mingw-w64 \
     && rm -rf /var/lib/apt/lists/*
 
 # Install oh-my-zsh for a better zsh experience
